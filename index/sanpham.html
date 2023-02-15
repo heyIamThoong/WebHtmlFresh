@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh natural</title>
+    <link rel="stylesheet" href="/css.css/sanpham.css">
+    <link rel="stylesheet" href="/css.css/tong.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .conteiner {
+            margin: auto;
+            width: 1500px;
+            height: 3000px;
+        }
+
+        .wrap {
+            width: 1500px;
+            height: 50px;
+            background-color: green;
+        }
+
+        .wrap #fresh {
+            text-decoration: none;
+            margin-left: 29px;
+            line-height: 50px;
+            color: white;
+            font-size: 20px;
+        }
+
+        #login {
+            text-decoration: none;
+            color: white;
+            float: right;
+            line-height: 50px;
+            margin-right: 30px;
+        }
+
+        #fresh:hover {
+            color: black;
+        }
+
+        #login:hover {
+            color: black;
+        }
+
+        .wrap_2 {
+            height: 200px;
+            background-color: rgb(93, 201, 59);
+        }
+
+        .wrap_2 img {
+            padding: 40px;
+        }
+
+        .wrap_2 input {
+            width: 700px;
+            height: 30px;
+            border-radius: 30px;
+            border: 1px solid white;
+            position: relative;
+            bottom: 80px;
+            left: 100px;
+        }
+
+        .wrap_3 {
+            width: 1500px;
+            height: 50px;
+            background-color: green;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            float: left;
+            margin-left: 120px;
+            line-height: 50px;
+            font-size: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        ul li a:hover {
+            color: #CDB38B;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dienthoai {
+            width: 40px;
+            margin-left: 170px;
+            margin-bottom: 26px;
+        }
+
+        .timkiem {
+            width: 45px;
+            position: relative;
+            bottom: 34px;
+            right: 290px;
+        }
+
+        .hotline {
+            color: white;
+            position: relative;
+            bottom: 130px;
+            left: 1200px;
+        }
+
+        .giohang {
+            width: 50px;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        #gh {
+            color: white;
+            margin-left: 200px;
+        }
+
+        .hotline_1 {
+            width: 100px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 300px;
+            background-color: #009900;
+        }
+
+        .footer_1 img {
+            width: 80px;
+            height: 80px;
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+
+        .footer_text {
+            margin-top: 20px;
+            width: 260px;
+            height: 200px;
+            text-align: center;
+            color: white;
+            margin-left: 20px;
+        }
+
+        .footer_1 {
+            float: left;
+        }
+
+        .footer_1 h2 {
+            color: white;
+        }
+
+        .footer_1 p {
+            color: white;
+        }
+
+        .footer_1 li {
+            margin-left: 50px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .img_doi_tac img {
+            width: 200px;
+            height: 200px;
+            margin-top: 30px;
+            margin-left: 220px;
+        }
+
+        @media (max-width : 768px) {
+            body {
+                width: 768px;
+            }
+
+            .wrap {
+
+                width: 100%;
+            }
+
+            .wrap_2 {
+                width: 100%;
+
+            }
+
+            .wrap_2 input {
+                width: 200px;
+                margin-right: 100px;
+            }
+
+            .wrap_3 {
+                width: 768px;
+                height: 110px;
+            }
+
+            ul li {
+                display: block;
+            }
+
+            .article {
+                width: 768px;
+            }
+
+            .conteiner {
+             
+                width: 768px;
+                height: 5000px;
+            }
+
+            .giohang {
+                position: relative;
+                top: 45px;
+                left: 30px;
+            }
+
+            .timkiem {
+                display: none;
+            }
+
+            .footer {
+                height: 900px;
+            }
+
+            .img_doi_tac {
+                position: relative;
+
+
+            }
+        }
+
+        @media (max-width : 390px) {
+            body {
+                width: 390px;
+            }
+
+            #fresh {
+                font-size: 5px;
+            }
+
+            .conteiner {
+                width: 390px;
+                height: 8500px;
+            }
+
+            .wrap {
+                width: 390px;
+            }
+
+            .wrap_2 {
+                width: 390px;
+            }
+
+            .wrap_3 {
+                width: 390px;
+                height: 350px;
+                display: block;
+                position: relative;
+            }
+
+            .logo {
+                width: 40px;
+
+            }
+
+            .banner_1 {
+                width: 390px;
+            }
+
+            .dienthoai {
+                position: relative;
+                bottom: 160px;
+                left: 100px;
+            }
+
+            .lien_hee {
+                position: absolute;
+                right: 200px;
+                top: 200px;
+            }
+
+            #gh {
+                position: absolute;
+                top: 240px;
+                right: 200px;
+            }
+
+            .giohang {
+                position: absolute;
+                top: 280px;
+                left: 200px;
+            }
+
+            .content {
+                display: block;
+            }
+
+            .banner_chanh {
+                width: 100px;
+
+            }
+
+            .banner_last {
+                width: 300px;
+            }
+
+            .footer {
+                width: 390px;
+                height: 1100px;
+            }
+
+            .content {
+                width: 330px;
+            }
+
+            .article {
+                width: 390px;
+            }
+            .img_doi_tac             {
+               position: absolute;
+               top: 8000px;
+               right: 70px;
+            }
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="wrap">
+            <a id="fresh" href="">Fresh Natural</a>
+            <a id="login" href="dangnhap.html">Đăng Nhập | Đăng Ký</a>
+        </div>
+        <div class="wrap_2">
+            <a href=""> <img class="logo" src="/imges/freshnatural_trang 1.jpeg" alt=""></a>
+            <input class="timkiem_input" type="text" placeholder=" &ensp; Tìm kiếm">
+            <a href="lienhe.html"><img class="dienthoai" src="/imges/dienthoai.jpeg" alt=""></a>
+            <img class="timkiem" src="/imges/timkiem.png" alt="">
+
+
+        </div>
+        <div class="wrap_3">
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="sanpham.html">Sản Phẩm</a></li>
+                <li><a href="tintuc.html">Tin Tức</a></li>
+                <li><a class="lien_hee" href="lienhe.html">Liên Hệ</a></li>
+                <li id="gh">Giỏ Hàng</li>
+            </ul>
+            <img class="giohang" src="/imges/giohang.png" alt="">
+        </div>
+        <img class="banner_1" style="width : 100%; margin-top: 10px;" src="/imges/banner_1.jpeg" alt="">
+        <div class="article">
+            <div class="item">
+                <div class="item_tieude">
+                    <p>DANH MỤC SẢN PHẨM</p>
+                </div>
+                <input class="danh_muc" type="checkbox"> &ensp; Đồ uống <br>
+                <input class="danh_muc" type="checkbox"> &ensp; Trái cây tươi <br>
+                <input class="danh_muc" type="checkbox"> &ensp; Sữa các loại <br>
+                <input class="danh_muc" type="checkbox"> &ensp; Rau củ sạch <br>
+                <input class="danh_muc" type="checkbox"> &ensp; Hoa quả nhập <br>
+            </div>
+            <div style="background-color: white;" class="item">
+                <img src="/imges/c7.jpeg" class="content_img" alt="">
+                <div class="content_text">
+                    <a href="">Bưởi Năm roi</a><br>
+                    <p>80.000đ</p>
+                </div>
+                <div class="content_text_1">
+                    <a href="">Xem</a>
+                </div>
+                <div class="content_text_2">
+                    <a href="">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+            <div style="background-color: white; " class="item">
+                <img src="/imges/nhomy.jpeg" class="content_img" alt="">
+                <div class="content_text">
+                    <a href="">Nho Mỹ Tím</a><br>
+                    <p>18.000đ</p>
+                </div>
+                <div class="content_text_1">
+                    <a href="">Xem</a>
+                </div>
+                <div class="content_text_2">
+                    <a href="">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+            <div style="background-color: white;" class="item">
+                <img src="/imges/n5.jpeg" class="content_img" alt="">
+                <div class="content_text">
+                    <a href="">Trà Xanh Không độ </a><br>
+                    <p>10.000đ</p>
+                </div>
+                <div class="content_text_1">
+                    <a href="">Xem</a>
+                </div>
+                <div class="content_text_2">
+                    <a href="">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+            <div   style="background-color: white; margin-left: 100px;" class="item">
+                <img src="/imges/t4.jpeg" class="content_img" alt="">
+                <div class="content_text">
+                    <a href="">Dâu Tây Đà Lạt </a><br>
+                    <p>40.000đ</p>
+                </div>
+                <div class="content_text_1">
+                    <a href="">Xem</a>
+                </div>
+                <div class="content_text_2">
+                    <a href="">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+            <div style="background-color: white; " class="item">
+                <img src="/imges/t2.jpeg" class="content_img" alt="">
+                <div class="content_text">
+                    <a href="">Táo Đỏ Hà Lan</a><br>
+                    <p>60.000đ</p>
+                </div>
+                <div class="content_text_1">
+                    <a href="">Xem</a>
+                </div>
+                <div class="content_text_2">
+                    <a href="">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+            <div style="background-color: white;" class="item">
+                <img src="/imges/t3.jpeg" class="content_img" alt="">
+                <div class="content_text">
+                    <a href="">Táo New ZeLand </a><br>
+                    <p>30.000đ</p>
+                </div>
+                <div class="content_text_1">
+                    <a href="">Xem</a>
+                </div>
+                <div class="content_text_2">
+                    <a href="">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: white;" class="item">
+            <img src="/imges/4 2.png" class="content_img" alt="">
+            <div class="content_text">
+                <a href="">Hộp Sữa Ông Thọ </a><br>
+                <p>20.000đ</p>
+            </div>
+            <div class="content_text_1">
+                <a href="">Xem</a>
+            </div>
+            <div class="content_text_2">
+                <a href="">
+                    Thêm vào giỏ hàng
+                </a>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="item">
+                <div class="item_tieude">
+                    <p>GIÁ THÀNH</p>
+                </div>
+                <input class="danh_muc" type="checkbox"> &ensp; Tất Cả <br>
+                <input class="danh_muc" type="checkbox"> &ensp; Dưới 100K<br>
+                <input class="danh_muc" type="checkbox"> &ensp; Từ 100K - 200K<br>
+                <input class="danh_muc" type="checkbox"> &ensp; Từ 200K - 500K <br>
+                <input class="danh_muc" type="checkbox"> &ensp; Trên 500K<br>
+            </div>
+            <div style="background-color: white;" class="item">
+                <img src="/imges/c8.jpeg" class="content_img" alt="">
+                <div class="content_text">
+                    <a href="">Sầu Riêng</a><br>
+                    <p>100.000đ</p>
+                </div>
+                <div class="content_text_1">
+                    <a href="">Xem</a>
+                </div>
+                <div class="content_text_2">
+                    <a href="">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+            <div style="background-color: white;  " class="item">
+                <img src="/imges/c1.jpeg" class="content_img" alt="">
+                <div class="content_text">
+                    <a href="">Nước chanh muối</a><br>
+                    <p>20.000đ</p>
+                </div>
+                <div class="content_text_1">
+                    <a href="">Xem</a>
+                </div>
+                <div class="content_text_2">
+                    <a href="">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+            <div style="background-color: white; " class="item">
+                <img src="/imges/c2.jpeg" class="content_img" alt="">
+                <div class="content_text">
+                    <a href="">Nước Dâu tây</a><br>
+                    <p>20.000đ</p>
+                </div>
+                <div class="content_text_1">
+                    <a href="">Xem</a>
+                </div>
+                <div class="content_text_2">
+                    <a href="">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+            <div  style="background-color: white; margin-left: 100px;" class="item">
+                <img src="/imges/c3.jpeg" class="content_img" alt="">
+                <div class="content_text">
+                    <a  href="">Bơ sáp </a><br>
+                    <p>20.000đ</p>
+                </div>
+                <div class="content_text_1">
+                    <a href="">Xem</a>
+                </div>
+                <div class="content_text_2">
+                    <a href="">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+            <div style="background-color: white;" class="item">
+                <img src="/imges/c4.jpeg" class="content_img" alt="">
+                <div class="content_text">
+                    <a href="">Cam Hưng Yên </a><br>
+                    <p>20.000đ</p>
+                </div>
+                <div class="content_text_1">
+                    <a href="">Xem</a>
+                </div>
+                <div class="content_text_2">
+                    <a href="">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+            <div style="background-color: white; " class="item">
+                <img src="/imges/c5.png" class="content_img" alt="">
+                <div class="content_text">
+                    <a href="">Ổi Trác Văn</a><br>
+                    <p>20.000đ</p>
+                </div>
+                <div class="content_text_1">
+                    <a href="">Xem</a>
+                </div>
+                <div class="content_text_2">
+                    <a href="">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div style="background-color: white;" class="item">
+            <img src="/imges/c6.jpeg" class="content_img" alt="">
+            <div class="content_text">
+                <a href="">Măng không cụt</a><br>
+                <p>20.000đ</p>
+            </div>
+            <div class="content_text_1">
+                <a href="">Xem</a>
+            </div>
+            <div class="content_text_2">
+                <a href="">
+                    Thêm vào giỏ hàng
+                </a>
+            </div>
+        </div>
+        <div class="img_doi_tac">
+            <img src="/imges/d3 2.png" alt="">
+            <img src="/imges/d2 2.png" alt="">
+            <img src="/imges/d4 2.png" alt="">
+        </div>
+    </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer_1">
+            <img src="/imges/freshnatural_trang.png" alt="">
+            <div class="footer_text">
+                Fresh Nature bán lẻ thực phẩm tươi sống, bánh kẹo, đồ hộp, đồ dùng gia đình giá rẻ, sản phẩm
+                tươi mới,
+                nguồn gốc đảm bảo, dịch vụ chu đáo
+            </div>
+        </div>
+        <div style="margin-left: 100px;margin-top: 50px;" class="footer_1">
+            <h2>Liên hệ</h2>
+            <p> <br> <br> <br>
+                Địa chỉ : Số nhà 7 Ngõ 91 Bắc Từ Liêm Hà Nội <br> <br>
+                Số điện thoại :0787445012 <br><br>
+                Email : thongltph20702@fpt.edu.vn</p>
+        </div>
+        <div style="margin-left: 100px;margin-top: 50px;" class="footer_1">
+            <h2>Thông Tin</h2>
+            <li>Giới thiệu</li>
+            <li>Thông tin vận chuyển</li>
+            <li>Quy định & điều khoản</li>
+            <li>Chính sách bảo mật</li>
+        </div>
+        <div style="margin-left: 150px;margin-top: 50px;" class="footer_1">
+            <h2> FaceBook</h2>
+            <br><br>
+            <p>Facebook : Thành Thông <br> <br>
+                Zalo : Thành Thông</p>
+        </div>
+</body>
+
+</html>
